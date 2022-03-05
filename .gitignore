@@ -1,0 +1,7 @@
+.terraform*
+terraform.tfstate*
+
+.tfplan
+client.properties
+
+local_example.tfvars
