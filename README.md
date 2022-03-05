@@ -117,7 +117,11 @@ REPLICATION_SECURE://$replication_secure\
 done
 ```
 
-get Kafka node example `aws kafka list-nodes --cluster-arn arn:aws:kafka:ap-east-1:<ACCOUNTID>:cluster/example/ef201dd6-d381-466d-84bc-ef86e4f7ec6a-2 --query 'NodeInfoList[*].BrokerNodeInfo.{id:BrokerId}'` or `aws kafka list-nodes --cluster-arn arn:aws:kafka:ap-east-1:<ACCOUNTID>:cluster/example/ef201dd6-d381-466d-84bc-ef86e4f7ec6a-2 --query 'NodeInfoList[*].BrokerNodeInfo.{id:BrokerId,point:Endpoints[0]}'`
+Get Kafka node example
+
+`aws kafka list-nodes --cluster-arn arn:aws:kafka:ap-east-1:<ACCOUNTID>:cluster/example/ef201dd6-d381-466d-84bc-ef86e4f7ec6a-2 --query 'NodeInfoList[*].BrokerNodeInfo.{id:BrokerId}'`
+
+`aws kafka list-nodes --cluster-arn arn:aws:kafka:ap-east-1:<ACCOUNTID>:cluster/example/ef201dd6-d381-466d-84bc-ef86e4f7ec6a-2 --query 'NodeInfoList[*].BrokerNodeInfo.{id:BrokerId,point:Endpoints[0]}'`
 
 
 ## Security
